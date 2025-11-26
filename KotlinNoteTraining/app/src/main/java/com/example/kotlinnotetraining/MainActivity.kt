@@ -69,7 +69,14 @@ fun MemoApp() {
         startDestination = "list"
     ) {
         composable("list") {
-            MemoListScreen(memoList = memoList, onClick = { index -> navigationController.navigate("detail/$index")})
+            MemoListScreen(memoList = memoList,  onClick = { index -> navigationController.navigate("detail/$index")}, onAddClick={
+
+                val newIndex = memoList.size
+                println("newindex $newIndex")
+                memoList.add("")
+                navigationController.navigate("detail/$newIndex")
+
+            })
         }
         composable("detail/{index}", arguments = listOf(navArgument("index") { type = NavType.IntType})) { backStackEntry ->
             val index = backStackEntry.arguments?.getInt("index") ?: return@composable
@@ -128,6 +135,7 @@ fun MemoDetail(
         TextField(
             value = newText,
             onValueChange = {newValue ->
+                newText = newValue
                 onTextChange(newValue) },
             modifier = Modifier
                 .padding(16.dp)
@@ -145,6 +153,7 @@ fun MemoDetail(
 @Composable
 fun MemoListScreen(
     memoList: List<String>,
+    onAddClick: () -> Unit,
     onClick: (Int) -> Unit
 ) {
     Scaffold(
@@ -159,7 +168,10 @@ fun MemoListScreen(
         },
         floatingActionButton = {
             FloatingActionButton(
-                onClick = {},
+                onClick = {
+                    onAddClick()
+                    println("押した")
+                          },
             ) {
                 Icon(Icons.Default.Add, contentDescription = "new")
             }
@@ -202,7 +214,7 @@ fun GreetingPreview() {
 @Composable
 fun MemoDetailPreview() {
     KotlinNoteTrainingTheme {
-        MemoDetail(text = "memo")
+        MemoDetail(text = "memo", onTextChange = {})
     }
 }
 
