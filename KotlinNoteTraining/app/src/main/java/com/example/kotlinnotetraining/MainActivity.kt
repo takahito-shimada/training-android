@@ -5,6 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
@@ -12,12 +13,14 @@ import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
+import androidx.compose.material.icons.filled.Delete
 import androidx.compose.material.icons.filled.Edit
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.FloatingActionButton
 import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
@@ -30,6 +33,7 @@ import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.setValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
@@ -69,14 +73,18 @@ fun MemoApp() {
         startDestination = "list"
     ) {
         composable("list") {
-            MemoListScreen(memoList = memoList,  onClick = { index -> navigationController.navigate("detail/$index")}, onAddClick={
-
-                val newIndex = memoList.size
-                println("newindex $newIndex")
-                memoList.add("")
-                navigationController.navigate("detail/$newIndex")
-
-            })
+            MemoListScreen(
+                memoList = memoList,
+                onClick = { index -> navigationController.navigate("detail/$index")},
+                onAddClick={
+                    val newIndex = memoList.size
+                    memoList.add("")
+                    navigationController.navigate("detail/$newIndex")
+                },
+                onDeleteClick = { index ->
+                    memoList.removeAt(index)
+                }
+            )
         }
         composable("detail/{index}", arguments = listOf(navArgument("index") { type = NavType.IntType})) { backStackEntry ->
             val index = backStackEntry.arguments?.getInt("index") ?: return@composable
@@ -94,14 +102,33 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 }
 
 @Composable
-fun MemoItem(index: Int,item: String, onClick: (Int) -> Unit) {
-    Card(
+fun MemoItem(
+    index: Int,
+    item: String,
+    onClick: (Int) -> Unit,
+    onDeleteClick: (Int) -> Unit
+) {
+    Box(
         modifier = Modifier
-            .padding(12.dp)
             .size(120.dp)
-            .clickable(onClick = { onClick(index) })
     ) {
-        Text(item, modifier = Modifier.padding(12.dp))
+        Card(
+            modifier = Modifier
+                .padding(12.dp)
+                .fillMaxSize()
+                .clickable(onClick = { onClick(index) })
+        ) {
+            Text(item, modifier = Modifier.padding(12.dp))
+        }
+        IconButton(
+            onClick = { onDeleteClick(index) },
+            modifier = Modifier
+                .padding(16.dp)
+                .size(width = 30.dp, height = 30.dp)
+                .align(Alignment.BottomEnd)
+        ) {
+            Icon(Icons.Default.Delete, contentDescription = null)
+        }
     }
 }
 
@@ -109,7 +136,8 @@ fun MemoItem(index: Int,item: String, onClick: (Int) -> Unit) {
 fun MemoList(
     memoList: List<String>,
     modifier: Modifier = Modifier,
-    onClick: (Int) -> Unit
+    onClick: (Int) -> Unit,
+    onDeleteClick: (Int) -> Unit
 ) {
     LazyVerticalGrid(
         columns = GridCells.Fixed(2),
@@ -118,7 +146,7 @@ fun MemoList(
     ) {
         items(memoList.size)
         { memo ->
-            MemoItem(index = memo,memoList[memo], onClick = onClick)
+            MemoItem(index = memo,memoList[memo], onClick = onClick, onDeleteClick = onDeleteClick)
         }
     }
 
@@ -154,7 +182,8 @@ fun MemoDetail(
 fun MemoListScreen(
     memoList: List<String>,
     onAddClick: () -> Unit,
-    onClick: (Int) -> Unit
+    onClick: (Int) -> Unit,
+    onDeleteClick: (Int) -> Unit
 ) {
     Scaffold(
         topBar = {
@@ -168,10 +197,7 @@ fun MemoListScreen(
         },
         floatingActionButton = {
             FloatingActionButton(
-                onClick = {
-                    onAddClick()
-                    println("押した")
-                          },
+                onClick = { onAddClick() },
             ) {
                 Icon(Icons.Default.Add, contentDescription = "new")
             }
@@ -180,7 +206,8 @@ fun MemoListScreen(
         MemoList(
             modifier = Modifier.padding(innerPadding),
             memoList = memoList,
-            onClick = onClick
+            onClick = onClick,
+            onDeleteClick = onDeleteClick
         )
     }
 }
