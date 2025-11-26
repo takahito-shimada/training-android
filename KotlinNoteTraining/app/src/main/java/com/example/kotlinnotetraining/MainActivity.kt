@@ -11,6 +11,7 @@ import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
+import androidx.compose.material.icons.filled.Edit
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -61,12 +62,12 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 }
 
 @Composable
-fun MemoItem(item:String){
+fun MemoItem(item: String) {
     Card(
         modifier = Modifier
             .padding(12.dp)
             .size(120.dp),
-    ){
+    ) {
         Text(item, modifier = Modifier.padding(12.dp))
     }
 }
@@ -74,23 +75,27 @@ fun MemoItem(item:String){
 @Composable
 fun MemoList(
     modifier: Modifier = Modifier
-){
-    var memoList by remember { mutableStateOf(List(10){ index ->
-        "memo$index"
-    }) }
+) {
+    var memoList by remember {
+        mutableStateOf(List(10) { index ->
+            "memo$index"
+        })
+    }
     LazyVerticalGrid(
         columns = GridCells.Fixed(2),
         modifier = modifier
 
-    ) { items(memoList.size)
-    {
-        memo -> MemoItem(memoList[memo])
-    }}
+    ) {
+        items(memoList.size)
+        { memo ->
+            MemoItem(memoList[memo])
+        }
+    }
 
 }
 
 @Composable
-fun MemoDetail(){
+fun MemoDetail() {
     Card(
     ) {
         TextField(
@@ -99,10 +104,10 @@ fun MemoDetail(){
             modifier = Modifier
                 .padding(16.dp)
                 .fillMaxSize(),
-             colors = TextFieldDefaults.colors(
-                 focusedIndicatorColor = Color.Transparent,
-                 unfocusedIndicatorColor = Color.Transparent
-             )
+            colors = TextFieldDefaults.colors(
+                focusedIndicatorColor = Color.Transparent,
+                unfocusedIndicatorColor = Color.Transparent
+            )
         )
     }
 
@@ -110,10 +115,16 @@ fun MemoDetail(){
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun MemoListScreen(){
+fun MemoListScreen() {
     Scaffold(
         topBar = {
-            TopAppBar(title = {Text("Memo App", color = MaterialTheme.colorScheme.tertiary, fontWeight = FontWeight.Bold)})
+            TopAppBar(title = {
+                Text(
+                    "Memo App",
+                    color = MaterialTheme.colorScheme.tertiary,
+                    fontWeight = FontWeight.Bold
+                )
+            })
         },
         floatingActionButton = {
             FloatingActionButton(
@@ -122,7 +133,7 @@ fun MemoListScreen(){
                 Icon(Icons.Default.Add, contentDescription = "new")
             }
         }
-    ) {innerPadding ->
+    ) { innerPadding ->
         MemoList(
             modifier = Modifier.padding(innerPadding)
         )
@@ -148,23 +159,24 @@ fun MemoItemPreview() {
 
 @Preview(showBackground = true, widthDp = 320, backgroundColor = 0xFFCCC2DC)
 @Composable
-fun MemoListPreview(){
-    KotlinNoteTrainingTheme{
+fun MemoListPreview() {
+    KotlinNoteTrainingTheme {
         MemoList()
     }
 }
+
 @Preview(showBackground = true, widthDp = 320, heightDp = 450)
 @Composable
-fun MemoDetailPreview(){
-    KotlinNoteTrainingTheme{
+fun MemoDetailPreview() {
+    KotlinNoteTrainingTheme {
         MemoDetail()
     }
 }
 
 @Preview(showBackground = true, widthDp = 320, heightDp = 450)
 @Composable
-fun MemoListScreenPreview(){
-    KotlinNoteTrainingTheme{
+fun MemoListScreenPreview() {
+    KotlinNoteTrainingTheme {
         MemoListScreen()
     }
 }
