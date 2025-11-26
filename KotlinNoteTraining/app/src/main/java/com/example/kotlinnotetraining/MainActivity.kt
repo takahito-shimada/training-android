@@ -26,6 +26,7 @@ import androidx.compose.material3.TextFieldDefaults
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.setValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -58,11 +59,10 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun MemoApp() {
-    var memoList by remember {
-        mutableStateOf(List(10) { index ->
-            "memo$index"
-        })
+    val memoList = remember {
+        mutableStateListOf(*Array(10) { index -> "memo$index" })
     }
+
     val navigationController = rememberNavController()
     NavHost(
         navController = navigationController,
@@ -73,7 +73,7 @@ fun MemoApp() {
         }
         composable("detail/{index}", arguments = listOf(navArgument("index") { type = NavType.IntType})) { backStackEntry ->
             val index = backStackEntry.arguments?.getInt("index") ?: return@composable
-            MemoDetail(text = memoList[index])
+            MemoDetail(text = memoList[index], onTextChange = {newValue -> memoList[index] = newValue})
         }
     }
 }
@@ -87,12 +87,12 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 }
 
 @Composable
-fun MemoItem(item: String, onClick: (Int) -> Unit) {
+fun MemoItem(index: Int,item: String, onClick: (Int) -> Unit) {
     Card(
         modifier = Modifier
             .padding(12.dp)
             .size(120.dp)
-            .clickable(onClick = { onClick })
+            .clickable(onClick = { onClick(index) })
     ) {
         Text(item, modifier = Modifier.padding(12.dp))
     }
@@ -111,7 +111,7 @@ fun MemoList(
     ) {
         items(memoList.size)
         { memo ->
-            MemoItem(memoList[memo], onClick = onClick)
+            MemoItem(index = memo,memoList[memo], onClick = onClick)
         }
     }
 
@@ -119,13 +119,16 @@ fun MemoList(
 
 @Composable
 fun MemoDetail(
-    text: String
+    text: String,
+    onTextChange: (String) -> Unit
 ) {
+    var newText by remember { mutableStateOf(text)  }
     Card(
     ) {
         TextField(
-            value = text,
-            onValueChange = {},
+            value = newText,
+            onValueChange = {newValue ->
+                onTextChange(newValue) },
             modifier = Modifier
                 .padding(16.dp)
                 .fillMaxSize(),
@@ -179,13 +182,13 @@ fun GreetingPreview() {
     }
 }
 
-@Preview(showBackground = true)
-@Composable
-fun MemoItemPreview() {
-    KotlinNoteTrainingTheme {
-        MemoItem("メモ", onClick = {})
-    }
-}
+//@Preview(showBackground = true)
+//@Composable
+//fun MemoItemPreview() {
+//    KotlinNoteTrainingTheme {
+//        MemoItem("メモ", onClick = {})
+//    }
+//}
 
 //@Preview(showBackground = true, widthDp = 320, backgroundColor = 0xFFCCC2DC)
 //@Composable
