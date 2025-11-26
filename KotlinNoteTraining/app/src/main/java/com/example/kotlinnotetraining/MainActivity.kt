@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
@@ -33,6 +34,11 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavType
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import androidx.navigation.compose.rememberNavController
+import androidx.navigation.navArgument
 import androidx.room.util.copy
 import com.example.kotlinnotetraining.ui.theme.KotlinNoteTrainingTheme
 
@@ -43,12 +49,31 @@ class MainActivity : ComponentActivity() {
         setContent {
             KotlinNoteTrainingTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
+                    MemoApp()
                 }
             }
+        }
+    }
+}
+
+@Composable
+fun MemoApp() {
+    var memoList by remember {
+        mutableStateOf(List(10) { index ->
+            "memo$index"
+        })
+    }
+    val navigationController = rememberNavController()
+    NavHost(
+        navController = navigationController,
+        startDestination = "list"
+    ) {
+        composable("list") {
+            MemoListScreen(memoList = memoList, onClick = { index -> navigationController.navigate("detail/$index")})
+        }
+        composable("detail/{index}", arguments = listOf(navArgument("index") { type = NavType.IntType})) { backStackEntry ->
+            val index = backStackEntry.arguments?.getInt("index") ?: return@composable
+            MemoDetail(text = memoList[index])
         }
     }
 }
@@ -62,11 +87,12 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 }
 
 @Composable
-fun MemoItem(item: String) {
+fun MemoItem(item: String, onClick: (Int) -> Unit) {
     Card(
         modifier = Modifier
             .padding(12.dp)
-            .size(120.dp),
+            .size(120.dp)
+            .clickable(onClick = { onClick })
     ) {
         Text(item, modifier = Modifier.padding(12.dp))
     }
@@ -74,13 +100,10 @@ fun MemoItem(item: String) {
 
 @Composable
 fun MemoList(
-    modifier: Modifier = Modifier
+    memoList: List<String>,
+    modifier: Modifier = Modifier,
+    onClick: (Int) -> Unit
 ) {
-    var memoList by remember {
-        mutableStateOf(List(10) { index ->
-            "memo$index"
-        })
-    }
     LazyVerticalGrid(
         columns = GridCells.Fixed(2),
         modifier = modifier
@@ -88,18 +111,20 @@ fun MemoList(
     ) {
         items(memoList.size)
         { memo ->
-            MemoItem(memoList[memo])
+            MemoItem(memoList[memo], onClick = onClick)
         }
     }
 
 }
 
 @Composable
-fun MemoDetail() {
+fun MemoDetail(
+    text: String
+) {
     Card(
     ) {
         TextField(
-            value = "メモ",
+            value = text,
             onValueChange = {},
             modifier = Modifier
                 .padding(16.dp)
@@ -115,7 +140,10 @@ fun MemoDetail() {
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun MemoListScreen() {
+fun MemoListScreen(
+    memoList: List<String>,
+    onClick: (Int) -> Unit
+) {
     Scaffold(
         topBar = {
             TopAppBar(title = {
@@ -135,7 +163,9 @@ fun MemoListScreen() {
         }
     ) { innerPadding ->
         MemoList(
-            modifier = Modifier.padding(innerPadding)
+            modifier = Modifier.padding(innerPadding),
+            memoList = memoList,
+            onClick = onClick
         )
     }
 }
@@ -153,32 +183,32 @@ fun GreetingPreview() {
 @Composable
 fun MemoItemPreview() {
     KotlinNoteTrainingTheme {
-        MemoItem("メモ")
+        MemoItem("メモ", onClick = {})
     }
 }
 
-@Preview(showBackground = true, widthDp = 320, backgroundColor = 0xFFCCC2DC)
-@Composable
-fun MemoListPreview() {
-    KotlinNoteTrainingTheme {
-        MemoList()
-    }
-}
+//@Preview(showBackground = true, widthDp = 320, backgroundColor = 0xFFCCC2DC)
+//@Composable
+//fun MemoListPreview() {
+//    KotlinNoteTrainingTheme {
+//        MemoList()
+//    }
+//}
 
 @Preview(showBackground = true, widthDp = 320, heightDp = 450)
 @Composable
 fun MemoDetailPreview() {
     KotlinNoteTrainingTheme {
-        MemoDetail()
+        MemoDetail(text = "memo")
     }
 }
 
-@Preview(showBackground = true, widthDp = 320, heightDp = 450)
-@Composable
-fun MemoListScreenPreview() {
-    KotlinNoteTrainingTheme {
-        MemoListScreen()
-    }
-}
+//@Preview(showBackground = true, widthDp = 320, heightDp = 450)
+//@Composable
+//fun MemoListScreenPreview() {
+//    KotlinNoteTrainingTheme {
+//        MemoListScreen()
+//    }
+//}
 
 
