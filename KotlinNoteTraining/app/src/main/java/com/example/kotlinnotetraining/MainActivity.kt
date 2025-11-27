@@ -4,6 +4,8 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -38,8 +40,11 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Outline
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -116,12 +121,14 @@ fun MemoItem(
     Box(
         modifier = Modifier
             .size(120.dp)
+
     ) {
         Card(
             modifier = Modifier
                 .padding(12.dp)
                 .fillMaxSize()
                 .clickable(onClick = { onClick(index) })
+                .background(MaterialTheme.colorScheme.background)
         ) {
             Text(item, modifier = Modifier.padding(12.dp))
         }
@@ -163,22 +170,42 @@ fun MemoDetail(
     onTextChange: (String) -> Unit
 ) {
     var newText by remember { mutableStateOf(text)  }
-    Card(
-    ) {
-        TextField(
-            value = newText,
-            onValueChange = {newValue ->
-                newText = newValue
-                onTextChange(newValue) },
-            modifier = Modifier
-                .padding(16.dp)
-                .fillMaxSize(),
-            colors = TextFieldDefaults.colors(
-                focusedIndicatorColor = Color.Transparent,
-                unfocusedIndicatorColor = Color.Transparent
-            )
+    val imageList = listOf(R.drawable.background, R.drawable.road_bg, R.drawable.nature_bg)
+    var bgImage = imageList.random()
+    Box(){
+
+
+        Image(
+            painter = painterResource(bgImage),
+            contentDescription = "背景",
+            modifier = Modifier.fillMaxSize(),
+            contentScale = ContentScale.Crop
         )
+        Card(
+            modifier = Modifier.fillMaxSize()
+                .padding(vertical = 50.dp)
+                .padding(30.dp)
+                .alpha(0.9f)
+        ) {
+
+            TextField(
+                value = newText,
+                onValueChange = {newValue ->
+                    newText = newValue
+                    onTextChange(newValue) },
+                modifier = Modifier
+                    .padding(16.dp)
+                    .fillMaxSize(),
+                colors = TextFieldDefaults.colors(
+                    focusedIndicatorColor = Color.Transparent,
+                    unfocusedIndicatorColor = Color.Transparent
+                )
+            )
+        }
+
     }
+
+
 
 }
 
@@ -211,7 +238,7 @@ fun MemoListScreen(
             }
         }
     ) { innerPadding ->
-        Column(modifier = Modifier.padding(innerPadding).fillMaxSize()) {
+        Column(modifier = Modifier.padding(innerPadding).fillMaxSize().background(MaterialTheme.colorScheme.tertiary)) {
             OutlinedTextField(
                 value = query,
                 onValueChange = {value -> query = value },
