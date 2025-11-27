@@ -15,6 +15,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.Delete
@@ -27,6 +28,7 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
+import androidx.compose.material3.OutlinedTextFieldDefaults
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextField
@@ -41,11 +43,13 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Outline
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavType
@@ -104,14 +108,6 @@ fun MemoApp() {
 }
 
 @Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Composable
 fun MemoItem(
     index: Int,
     item: String,
@@ -121,16 +117,20 @@ fun MemoItem(
     Box(
         modifier = Modifier
             .size(120.dp)
+            .clip(RoundedCornerShape(10.dp))
 
     ) {
         Card(
+            colors = CardDefaults.cardColors(MaterialTheme.colorScheme.surface),
             modifier = Modifier
                 .padding(12.dp)
                 .fillMaxSize()
                 .clickable(onClick = { onClick(index) })
-                .background(MaterialTheme.colorScheme.background)
         ) {
-            Text(item, modifier = Modifier.padding(12.dp))
+            Text(item,
+                modifier = Modifier.padding(12.dp),
+                maxLines = 2,
+                overflow = TextOverflow.Ellipsis)
         }
         IconButton(
             onClick = { onDeleteClick(index) },
@@ -171,10 +171,9 @@ fun MemoDetail(
 ) {
     var newText by remember { mutableStateOf(text)  }
     val imageList = listOf(R.drawable.background, R.drawable.road_bg, R.drawable.nature_bg)
-    var bgImage = imageList.random()
+    val bgImage = remember { imageList.random() }
+
     Box(){
-
-
         Image(
             painter = painterResource(bgImage),
             contentDescription = "背景",
@@ -238,32 +237,37 @@ fun MemoListScreen(
             }
         }
     ) { innerPadding ->
-        Column(modifier = Modifier.padding(innerPadding).fillMaxSize().background(MaterialTheme.colorScheme.tertiary)) {
-            OutlinedTextField(
-                value = query,
-                onValueChange = {value -> query = value },
-                label = {Text("検索")},
-                modifier = Modifier.fillMaxWidth().padding( 16.dp)
+        Box(modifier = Modifier
+            .fillMaxSize()
+            .background(MaterialTheme.colorScheme.background)
             )
+        {
+            Column(modifier = Modifier
+                .padding(innerPadding)
+                .fillMaxSize()) {
+                OutlinedTextField(
+                    value = query,
+                    onValueChange = {value -> query = value },
+                    label = {Text("search")},
+                    modifier = Modifier.fillMaxWidth().padding( 16.dp),
+                    colors = OutlinedTextFieldDefaults.colors(
+                        focusedContainerColor = MaterialTheme.colorScheme.surface,
+                        unfocusedContainerColor = MaterialTheme.colorScheme.surface,
+                        )
+                )
 
-            MemoList(
-                memoList = filteredMemoList,
-                onClick = onClick,
-                onDeleteClick = onDeleteClick
-            )
+                MemoList(
+                    memoList = filteredMemoList,
+                    onClick = onClick,
+                    onDeleteClick = onDeleteClick
+                )
+            }
         }
 
+
     }
 }
 
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    KotlinNoteTrainingTheme {
-        Greeting("Android")
-    }
-}
 
 //@Preview(showBackground = true)
 //@Composable
