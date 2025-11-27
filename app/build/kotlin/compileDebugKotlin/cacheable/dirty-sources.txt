@@ -1,0 +1,4 @@
+/Users/shimada.takahito/workspaces/training-android/app/src/main/java/com/example/kotlinnotetraining/ui/theme/Type.kt
+/Users/shimada.takahito/workspaces/training-android/app/src/main/java/com/example/kotlinnotetraining/ui/theme/Theme.kt
+/Users/shimada.takahito/workspaces/training-android/app/src/main/java/com/example/kotlinnotetraining/MainActivity.kt
+/Users/shimada.takahito/workspaces/training-android/app/src/main/java/com/example/kotlinnotetraining/ui/theme/Color.kt

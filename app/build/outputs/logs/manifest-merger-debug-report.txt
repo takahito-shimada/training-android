@@ -1,0 +1,364 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/shimada.takahito/workspaces/training-android/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/shimada.takahito/workspaces/training-android/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/shimada.takahito/workspaces/training-android/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/shimada.takahito/workspaces/training-android/app/src/main/AndroidManifest.xml:2:1-27:12
+MERGED from [androidx.navigationevent:navigationevent-android:1.0.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/3036066c3f5e8898ed3a0b3e4702b69b/transformed/navigationevent/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigationevent:navigationevent-compose-android:1.0.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/913d0afdfc7515a8b9819d11419a0ea8/transformed/navigationevent-compose/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material3:material3-android:1.3.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/11cc898e37e02c0bf3154b57779102c9/transformed/material3-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.material:material-ripple-android:1.7.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/bb8395e886f3d80e2f505202845f3f0c/transformed/material-ripple-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.foundation:foundation-android:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/b2131b6ed74abdfc76925e9957506cb3/transformed/foundation-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/44d2c07f2afbadfba7e2a0daaee500ff/transformed/foundation-layout/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.animation:animation-core-android:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/d1656dffca91a0be426cfe595edd16da/transformed/animation-core/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.animation:animation-android:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/753771150d6d7556a0967b55115daa59/transformed/animation/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-tooling-data-android:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/83c8a4fa1dc44448b11ec6a4caee5248/transformed/ui-tooling-data/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-geometry-android:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/4bef644218004325f123478a5fbe0841/transformed/ui-geometry/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/c8b7cac1f90f9f0c4f15770c5c70576a/transformed/ui-tooling-preview/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui-util-android:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/afdc0ca8f240abffe8e065b5a1bedafa/transformed/ui-util/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-unit-android:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/155cd1a56d8f49ec28ec98b758db0564/transformed/ui-unit/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-text-android:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/079965b722222258eb7d48c2d05b67cc/transformed/ui-text/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-graphics-android:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/83d1beb5040f34bef0043db87f6ada30/transformed/ui-graphics-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-tooling-android:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/7c2330d6044c0dd7ba5f89abfc647f0a/transformed/ui-tooling/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.compose.material:material-android:1.7.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/bb4215bda6c4976029d42cc0c800cb4a/transformed/material-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-icons-core-android:1.7.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/96f26f376ec4d1970f1c9dc469cc6b7d/transformed/material-icons-core-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-android:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/0f0aa9187adf9ea368492e97c0795b3d/transformed/ui-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-test-manifest:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/22bff1dae6c799148bfc65a51e229e48/transformed/ui-test-manifest-1.9.2/AndroidManifest.xml:17:1-29:12
+MERGED from [androidx.activity:activity-ktx:1.12.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/41e395e1849c92baee221cec5089be95/transformed/activity-ktx-1.12.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.activity:activity:1.12.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/2cd3beeb85b63ee92b47f9b297af82bc/transformed/activity-1.12.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity-compose:1.12.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/4b0d67ce14f1ff1a93a195a28661ca1d/transformed/activity-compose-1.12.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.autofill:autofill:1.0.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/acd73004758574ef31b519f79282e560/transformed/autofill-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.graphics:graphics-path:1.0.1] /Users/shimada.takahito/.gradle/caches/8.13/transforms/31d5c3899461cb64596487a014dbeaff/transformed/graphics-path-1.0.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.4.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/9be01836e04652a6fcff8bfa93295178/transformed/emoji2-1.4.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.core:core:1.17.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/669e35385d1efee02c093a070f45bd90/transformed/core-1.17.0/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.10.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/7523d7749007f1f8823fe0f6dd139a43/transformed/lifecycle-process-2.10.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.10.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/be6a6dd30b0d8e4df66fc6e46af86fe3/transformed/lifecycle-viewmodel-ktx-2.10.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.10.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/32cd8dc4f3369a0047f6ae46ec91160d/transformed/lifecycle-livedata-core-2.10.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.10.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/b285a0bb2890522f9907f4bb165ef3a0/transformed/lifecycle-viewmodel/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.runtime:runtime-annotation-android:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/a9c4ded0dde8d49a5e91b6f667c9dafc/transformed/runtime-annotation/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.4.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/763dbe688348eeeb590005bd3f81d580/transformed/savedstate-ktx-1.4.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.savedstate:savedstate-android:1.4.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/33dc3b395f5a8f26b18d28e1a4071808/transformed/savedstate/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate-compose-android:1.4.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/b93be84b9709d0e0c7acf30c243f62d0/transformed/savedstate-compose/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.runtime:runtime-android:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/2db725aae51e4759b12caca5083e0360/transformed/runtime/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/7ce4c6f11ded436f393a1e567b638674/transformed/runtime-saveable/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-compose-android:2.10.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/9880a9317543823e11ce11a3c60f021d/transformed/lifecycle-runtime-compose/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.10.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/263120547ed08f52f54350a124a2e429/transformed/lifecycle-runtime/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.10.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/ef7fe8b4fbde9ea6e51f0fcb31e150bb/transformed/lifecycle-runtime-ktx/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate-android:2.10.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/c1e24c3c0b18709b3c21874c349ad707/transformed/lifecycle-viewmodel-savedstate/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/fe51a0932bb671c53feb3d43a23843c1/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.core:core-ktx:1.17.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/da4b5eafb9253ee89425231da4198a42/transformed/core-ktx-1.17.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.room:room-runtime-android:2.8.4] /Users/shimada.takahito/.gradle/caches/8.13/transforms/7b661f70848574544931d0cdcc01cd44/transformed/room-runtime/AndroidManifest.xml:17:1-31:12
+MERGED from [androidx.room:room-ktx:2.8.4] /Users/shimada.takahito/.gradle/caches/8.13/transforms/f9bebf5e2af479df998dfae0195a6688/transformed/room-ktx-2.8.4/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core-viewtree:1.0.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/063f6c4e17b64828f92e80708935ddd9/transformed/core-viewtree-1.0.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/0b71c0b9452e2c3bf87dea2b94daf60b/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/febbff2901a53937fc578588d38dcb3f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/shimada.takahito/.gradle/caches/8.13/transforms/4c2a9c58b81242440619170ed5960f24/transformed/startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.2.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/03573353e9198c0b43a282be4449ecc0/transformed/tracing-1.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/shimada.takahito/.gradle/caches/8.13/transforms/cd206e8432b7d9a65b63c9de0d6fb73f/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/15a178cdf0820656673be5371b1c72d1/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite-framework-android:2.6.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/fc13a7910dc741fde8bb20f792655b5a/transformed/sqlite-framework/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite-android:2.6.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/eef9e032500b8ae5ff7365caddeaad90/transformed/sqlite/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.5.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/3d1bd9cb313d259e3f455e73288bebdb/transformed/annotation-experimental-1.5.0/AndroidManifest.xml:2:1-7:12
+	package
+		INJECTED from /Users/shimada.takahito/workspaces/training-android/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/shimada.takahito/workspaces/training-android/app/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/shimada.takahito/workspaces/training-android/app/src/main/AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from /Users/shimada.takahito/workspaces/training-android/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/shimada.takahito/workspaces/training-android/app/src/main/AndroidManifest.xml:2:11-69
+application
+ADDED from /Users/shimada.takahito/workspaces/training-android/app/src/main/AndroidManifest.xml:5:5-25:19
+INJECTED from /Users/shimada.takahito/workspaces/training-android/app/src/main/AndroidManifest.xml:5:5-25:19
+MERGED from [androidx.compose.ui:ui-tooling-android:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/7c2330d6044c0dd7ba5f89abfc647f0a/transformed/ui-tooling/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.compose.ui:ui-tooling-android:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/7c2330d6044c0dd7ba5f89abfc647f0a/transformed/ui-tooling/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.compose.ui:ui-test-manifest:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/22bff1dae6c799148bfc65a51e229e48/transformed/ui-test-manifest-1.9.2/AndroidManifest.xml:22:5-27:19
+MERGED from [androidx.compose.ui:ui-test-manifest:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/22bff1dae6c799148bfc65a51e229e48/transformed/ui-test-manifest-1.9.2/AndroidManifest.xml:22:5-27:19
+MERGED from [androidx.emoji2:emoji2:1.4.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/9be01836e04652a6fcff8bfa93295178/transformed/emoji2-1.4.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.4.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/9be01836e04652a6fcff8bfa93295178/transformed/emoji2-1.4.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.core:core:1.17.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/669e35385d1efee02c093a070f45bd90/transformed/core-1.17.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.17.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/669e35385d1efee02c093a070f45bd90/transformed/core-1.17.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.10.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/7523d7749007f1f8823fe0f6dd139a43/transformed/lifecycle-process-2.10.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.10.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/7523d7749007f1f8823fe0f6dd139a43/transformed/lifecycle-process-2.10.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.room:room-runtime-android:2.8.4] /Users/shimada.takahito/.gradle/caches/8.13/transforms/7b661f70848574544931d0cdcc01cd44/transformed/room-runtime/AndroidManifest.xml:23:5-29:19
+MERGED from [androidx.room:room-runtime-android:2.8.4] /Users/shimada.takahito/.gradle/caches/8.13/transforms/7b661f70848574544931d0cdcc01cd44/transformed/room-runtime/AndroidManifest.xml:23:5-29:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/febbff2901a53937fc578588d38dcb3f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/febbff2901a53937fc578588d38dcb3f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/shimada.takahito/.gradle/caches/8.13/transforms/4c2a9c58b81242440619170ed5960f24/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/shimada.takahito/.gradle/caches/8.13/transforms/4c2a9c58b81242440619170ed5960f24/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/shimada.takahito/.gradle/caches/8.13/transforms/cd206e8432b7d9a65b63c9de0d6fb73f/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/shimada.takahito/.gradle/caches/8.13/transforms/cd206e8432b7d9a65b63c9de0d6fb73f/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+	android:extractNativeLibs
+		INJECTED from /Users/shimada.takahito/workspaces/training-android/app/src/main/AndroidManifest.xml
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.17.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/669e35385d1efee02c093a070f45bd90/transformed/core-1.17.0/AndroidManifest.xml:28:18-86
+	android:supportsRtl
+		ADDED from /Users/shimada.takahito/workspaces/training-android/app/src/main/AndroidManifest.xml:12:9-35
+	android:label
+		ADDED from /Users/shimada.takahito/workspaces/training-android/app/src/main/AndroidManifest.xml:10:9-41
+	android:fullBackupContent
+		ADDED from /Users/shimada.takahito/workspaces/training-android/app/src/main/AndroidManifest.xml:8:9-54
+	android:roundIcon
+		ADDED from /Users/shimada.takahito/workspaces/training-android/app/src/main/AndroidManifest.xml:11:9-54
+	android:icon
+		ADDED from /Users/shimada.takahito/workspaces/training-android/app/src/main/AndroidManifest.xml:9:9-43
+	android:allowBackup
+		ADDED from /Users/shimada.takahito/workspaces/training-android/app/src/main/AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from /Users/shimada.takahito/workspaces/training-android/app/src/main/AndroidManifest.xml:13:9-56
+	android:dataExtractionRules
+		ADDED from /Users/shimada.takahito/workspaces/training-android/app/src/main/AndroidManifest.xml:7:9-65
+activity#com.example.kotlinnotetraining.MainActivity
+ADDED from /Users/shimada.takahito/workspaces/training-android/app/src/main/AndroidManifest.xml:14:9-24:20
+	android:label
+		ADDED from /Users/shimada.takahito/workspaces/training-android/app/src/main/AndroidManifest.xml:17:13-45
+	android:exported
+		ADDED from /Users/shimada.takahito/workspaces/training-android/app/src/main/AndroidManifest.xml:16:13-36
+	android:theme
+		ADDED from /Users/shimada.takahito/workspaces/training-android/app/src/main/AndroidManifest.xml:18:13-60
+	android:name
+		ADDED from /Users/shimada.takahito/workspaces/training-android/app/src/main/AndroidManifest.xml:15:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/shimada.takahito/workspaces/training-android/app/src/main/AndroidManifest.xml:19:13-23:29
+action#android.intent.action.MAIN
+ADDED from /Users/shimada.takahito/workspaces/training-android/app/src/main/AndroidManifest.xml:20:17-69
+	android:name
+		ADDED from /Users/shimada.takahito/workspaces/training-android/app/src/main/AndroidManifest.xml:20:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/shimada.takahito/workspaces/training-android/app/src/main/AndroidManifest.xml:22:17-77
+	android:name
+		ADDED from /Users/shimada.takahito/workspaces/training-android/app/src/main/AndroidManifest.xml:22:27-74
+uses-sdk
+INJECTED from /Users/shimada.takahito/workspaces/training-android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/shimada.takahito/workspaces/training-android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/shimada.takahito/workspaces/training-android/app/src/main/AndroidManifest.xml
+MERGED from [androidx.navigationevent:navigationevent-android:1.0.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/3036066c3f5e8898ed3a0b3e4702b69b/transformed/navigationevent/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigationevent:navigationevent-android:1.0.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/3036066c3f5e8898ed3a0b3e4702b69b/transformed/navigationevent/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigationevent:navigationevent-compose-android:1.0.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/913d0afdfc7515a8b9819d11419a0ea8/transformed/navigationevent-compose/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigationevent:navigationevent-compose-android:1.0.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/913d0afdfc7515a8b9819d11419a0ea8/transformed/navigationevent-compose/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material3:material3-android:1.3.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/11cc898e37e02c0bf3154b57779102c9/transformed/material3-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material3:material3-android:1.3.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/11cc898e37e02c0bf3154b57779102c9/transformed/material3-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material:material-ripple-android:1.7.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/bb8395e886f3d80e2f505202845f3f0c/transformed/material-ripple-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-ripple-android:1.7.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/bb8395e886f3d80e2f505202845f3f0c/transformed/material-ripple-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-android:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/b2131b6ed74abdfc76925e9957506cb3/transformed/foundation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-android:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/b2131b6ed74abdfc76925e9957506cb3/transformed/foundation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/44d2c07f2afbadfba7e2a0daaee500ff/transformed/foundation-layout/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/44d2c07f2afbadfba7e2a0daaee500ff/transformed/foundation-layout/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-core-android:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/d1656dffca91a0be426cfe595edd16da/transformed/animation-core/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-core-android:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/d1656dffca91a0be426cfe595edd16da/transformed/animation-core/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-android:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/753771150d6d7556a0967b55115daa59/transformed/animation/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-android:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/753771150d6d7556a0967b55115daa59/transformed/animation/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-data-android:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/83c8a4fa1dc44448b11ec6a4caee5248/transformed/ui-tooling-data/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-data-android:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/83c8a4fa1dc44448b11ec6a4caee5248/transformed/ui-tooling-data/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-geometry-android:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/4bef644218004325f123478a5fbe0841/transformed/ui-geometry/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-geometry-android:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/4bef644218004325f123478a5fbe0841/transformed/ui-geometry/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/c8b7cac1f90f9f0c4f15770c5c70576a/transformed/ui-tooling-preview/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/c8b7cac1f90f9f0c4f15770c5c70576a/transformed/ui-tooling-preview/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-util-android:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/afdc0ca8f240abffe8e065b5a1bedafa/transformed/ui-util/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-util-android:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/afdc0ca8f240abffe8e065b5a1bedafa/transformed/ui-util/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-unit-android:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/155cd1a56d8f49ec28ec98b758db0564/transformed/ui-unit/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-unit-android:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/155cd1a56d8f49ec28ec98b758db0564/transformed/ui-unit/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-text-android:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/079965b722222258eb7d48c2d05b67cc/transformed/ui-text/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-text-android:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/079965b722222258eb7d48c2d05b67cc/transformed/ui-text/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-graphics-android:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/83d1beb5040f34bef0043db87f6ada30/transformed/ui-graphics-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-graphics-android:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/83d1beb5040f34bef0043db87f6ada30/transformed/ui-graphics-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-android:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/7c2330d6044c0dd7ba5f89abfc647f0a/transformed/ui-tooling/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-android:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/7c2330d6044c0dd7ba5f89abfc647f0a/transformed/ui-tooling/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material:material-android:1.7.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/bb4215bda6c4976029d42cc0c800cb4a/transformed/material-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-android:1.7.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/bb4215bda6c4976029d42cc0c800cb4a/transformed/material-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-core-android:1.7.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/96f26f376ec4d1970f1c9dc469cc6b7d/transformed/material-icons-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-core-android:1.7.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/96f26f376ec4d1970f1c9dc469cc6b7d/transformed/material-icons-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-android:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/0f0aa9187adf9ea368492e97c0795b3d/transformed/ui-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-android:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/0f0aa9187adf9ea368492e97c0795b3d/transformed/ui-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-test-manifest:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/22bff1dae6c799148bfc65a51e229e48/transformed/ui-test-manifest-1.9.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-test-manifest:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/22bff1dae6c799148bfc65a51e229e48/transformed/ui-test-manifest-1.9.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity-ktx:1.12.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/41e395e1849c92baee221cec5089be95/transformed/activity-ktx-1.12.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-ktx:1.12.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/41e395e1849c92baee221cec5089be95/transformed/activity-ktx-1.12.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity:1.12.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/2cd3beeb85b63ee92b47f9b297af82bc/transformed/activity-1.12.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.12.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/2cd3beeb85b63ee92b47f9b297af82bc/transformed/activity-1.12.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity-compose:1.12.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/4b0d67ce14f1ff1a93a195a28661ca1d/transformed/activity-compose-1.12.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-compose:1.12.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/4b0d67ce14f1ff1a93a195a28661ca1d/transformed/activity-compose-1.12.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.autofill:autofill:1.0.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/acd73004758574ef31b519f79282e560/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.autofill:autofill:1.0.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/acd73004758574ef31b519f79282e560/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.graphics:graphics-path:1.0.1] /Users/shimada.takahito/.gradle/caches/8.13/transforms/31d5c3899461cb64596487a014dbeaff/transformed/graphics-path-1.0.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.graphics:graphics-path:1.0.1] /Users/shimada.takahito/.gradle/caches/8.13/transforms/31d5c3899461cb64596487a014dbeaff/transformed/graphics-path-1.0.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.4.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/9be01836e04652a6fcff8bfa93295178/transformed/emoji2-1.4.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.4.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/9be01836e04652a6fcff8bfa93295178/transformed/emoji2-1.4.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.core:core:1.17.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/669e35385d1efee02c093a070f45bd90/transformed/core-1.17.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.17.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/669e35385d1efee02c093a070f45bd90/transformed/core-1.17.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.10.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/7523d7749007f1f8823fe0f6dd139a43/transformed/lifecycle-process-2.10.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.10.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/7523d7749007f1f8823fe0f6dd139a43/transformed/lifecycle-process-2.10.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.10.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/be6a6dd30b0d8e4df66fc6e46af86fe3/transformed/lifecycle-viewmodel-ktx-2.10.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.10.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/be6a6dd30b0d8e4df66fc6e46af86fe3/transformed/lifecycle-viewmodel-ktx-2.10.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.10.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/32cd8dc4f3369a0047f6ae46ec91160d/transformed/lifecycle-livedata-core-2.10.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.10.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/32cd8dc4f3369a0047f6ae46ec91160d/transformed/lifecycle-livedata-core-2.10.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.10.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/b285a0bb2890522f9907f4bb165ef3a0/transformed/lifecycle-viewmodel/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.10.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/b285a0bb2890522f9907f4bb165ef3a0/transformed/lifecycle-viewmodel/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.runtime:runtime-annotation-android:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/a9c4ded0dde8d49a5e91b6f667c9dafc/transformed/runtime-annotation/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-annotation-android:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/a9c4ded0dde8d49a5e91b6f667c9dafc/transformed/runtime-annotation/AndroidManifest.xml:5:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.4.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/763dbe688348eeeb590005bd3f81d580/transformed/savedstate-ktx-1.4.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.4.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/763dbe688348eeeb590005bd3f81d580/transformed/savedstate-ktx-1.4.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.savedstate:savedstate-android:1.4.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/33dc3b395f5a8f26b18d28e1a4071808/transformed/savedstate/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-android:1.4.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/33dc3b395f5a8f26b18d28e1a4071808/transformed/savedstate/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-compose-android:1.4.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/b93be84b9709d0e0c7acf30c243f62d0/transformed/savedstate-compose/AndroidManifest.xml:5:5-44
+MERGED from [androidx.savedstate:savedstate-compose-android:1.4.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/b93be84b9709d0e0c7acf30c243f62d0/transformed/savedstate-compose/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-android:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/2db725aae51e4759b12caca5083e0360/transformed/runtime/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-android:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/2db725aae51e4759b12caca5083e0360/transformed/runtime/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/7ce4c6f11ded436f393a1e567b638674/transformed/runtime-saveable/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/7ce4c6f11ded436f393a1e567b638674/transformed/runtime-saveable/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-compose-android:2.10.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/9880a9317543823e11ce11a3c60f021d/transformed/lifecycle-runtime-compose/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-compose-android:2.10.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/9880a9317543823e11ce11a3c60f021d/transformed/lifecycle-runtime-compose/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.10.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/263120547ed08f52f54350a124a2e429/transformed/lifecycle-runtime/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.10.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/263120547ed08f52f54350a124a2e429/transformed/lifecycle-runtime/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.10.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/ef7fe8b4fbde9ea6e51f0fcb31e150bb/transformed/lifecycle-runtime-ktx/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.10.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/ef7fe8b4fbde9ea6e51f0fcb31e150bb/transformed/lifecycle-runtime-ktx/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate-android:2.10.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/c1e24c3c0b18709b3c21874c349ad707/transformed/lifecycle-viewmodel-savedstate/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate-android:2.10.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/c1e24c3c0b18709b3c21874c349ad707/transformed/lifecycle-viewmodel-savedstate/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/fe51a0932bb671c53feb3d43a23843c1/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/fe51a0932bb671c53feb3d43a23843c1/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.core:core-ktx:1.17.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/da4b5eafb9253ee89425231da4198a42/transformed/core-ktx-1.17.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.17.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/da4b5eafb9253ee89425231da4198a42/transformed/core-ktx-1.17.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.room:room-runtime-android:2.8.4] /Users/shimada.takahito/.gradle/caches/8.13/transforms/7b661f70848574544931d0cdcc01cd44/transformed/room-runtime/AndroidManifest.xml:21:5-44
+MERGED from [androidx.room:room-runtime-android:2.8.4] /Users/shimada.takahito/.gradle/caches/8.13/transforms/7b661f70848574544931d0cdcc01cd44/transformed/room-runtime/AndroidManifest.xml:21:5-44
+MERGED from [androidx.room:room-ktx:2.8.4] /Users/shimada.takahito/.gradle/caches/8.13/transforms/f9bebf5e2af479df998dfae0195a6688/transformed/room-ktx-2.8.4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.room:room-ktx:2.8.4] /Users/shimada.takahito/.gradle/caches/8.13/transforms/f9bebf5e2af479df998dfae0195a6688/transformed/room-ktx-2.8.4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core-viewtree:1.0.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/063f6c4e17b64828f92e80708935ddd9/transformed/core-viewtree-1.0.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-viewtree:1.0.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/063f6c4e17b64828f92e80708935ddd9/transformed/core-viewtree-1.0.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/0b71c0b9452e2c3bf87dea2b94daf60b/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/0b71c0b9452e2c3bf87dea2b94daf60b/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/febbff2901a53937fc578588d38dcb3f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/febbff2901a53937fc578588d38dcb3f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/shimada.takahito/.gradle/caches/8.13/transforms/4c2a9c58b81242440619170ed5960f24/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/shimada.takahito/.gradle/caches/8.13/transforms/4c2a9c58b81242440619170ed5960f24/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.2.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/03573353e9198c0b43a282be4449ecc0/transformed/tracing-1.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.tracing:tracing:1.2.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/03573353e9198c0b43a282be4449ecc0/transformed/tracing-1.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/shimada.takahito/.gradle/caches/8.13/transforms/cd206e8432b7d9a65b63c9de0d6fb73f/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/shimada.takahito/.gradle/caches/8.13/transforms/cd206e8432b7d9a65b63c9de0d6fb73f/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/15a178cdf0820656673be5371b1c72d1/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/15a178cdf0820656673be5371b1c72d1/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework-android:2.6.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/fc13a7910dc741fde8bb20f792655b5a/transformed/sqlite-framework/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework-android:2.6.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/fc13a7910dc741fde8bb20f792655b5a/transformed/sqlite-framework/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-android:2.6.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/eef9e032500b8ae5ff7365caddeaad90/transformed/sqlite/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-android:2.6.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/eef9e032500b8ae5ff7365caddeaad90/transformed/sqlite/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.5.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/3d1bd9cb313d259e3f455e73288bebdb/transformed/annotation-experimental-1.5.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.5.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/3d1bd9cb313d259e3f455e73288bebdb/transformed/annotation-experimental-1.5.0/AndroidManifest.xml:5:5-44
+	android:targetSdkVersion
+		INJECTED from /Users/shimada.takahito/workspaces/training-android/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/shimada.takahito/workspaces/training-android/app/src/main/AndroidManifest.xml
+activity#androidx.compose.ui.tooling.PreviewActivity
+ADDED from [androidx.compose.ui:ui-tooling-android:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/7c2330d6044c0dd7ba5f89abfc647f0a/transformed/ui-tooling/AndroidManifest.xml:23:9-25:39
+	android:exported
+		ADDED from [androidx.compose.ui:ui-tooling-android:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/7c2330d6044c0dd7ba5f89abfc647f0a/transformed/ui-tooling/AndroidManifest.xml:25:13-36
+	android:name
+		ADDED from [androidx.compose.ui:ui-tooling-android:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/7c2330d6044c0dd7ba5f89abfc647f0a/transformed/ui-tooling/AndroidManifest.xml:24:13-71
+activity#androidx.activity.ComponentActivity
+ADDED from [androidx.compose.ui:ui-test-manifest:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/22bff1dae6c799148bfc65a51e229e48/transformed/ui-test-manifest-1.9.2/AndroidManifest.xml:23:9-26:79
+	android:exported
+		ADDED from [androidx.compose.ui:ui-test-manifest:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/22bff1dae6c799148bfc65a51e229e48/transformed/ui-test-manifest-1.9.2/AndroidManifest.xml:25:13-36
+	android:theme
+		ADDED from [androidx.compose.ui:ui-test-manifest:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/22bff1dae6c799148bfc65a51e229e48/transformed/ui-test-manifest-1.9.2/AndroidManifest.xml:26:13-76
+	android:name
+		ADDED from [androidx.compose.ui:ui-test-manifest:1.9.2] /Users/shimada.takahito/.gradle/caches/8.13/transforms/22bff1dae6c799148bfc65a51e229e48/transformed/ui-test-manifest-1.9.2/AndroidManifest.xml:24:13-63
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.4.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/9be01836e04652a6fcff8bfa93295178/transformed/emoji2-1.4.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.10.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/7523d7749007f1f8823fe0f6dd139a43/transformed/lifecycle-process-2.10.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.10.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/7523d7749007f1f8823fe0f6dd139a43/transformed/lifecycle-process-2.10.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/febbff2901a53937fc578588d38dcb3f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/febbff2901a53937fc578588d38dcb3f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/shimada.takahito/.gradle/caches/8.13/transforms/4c2a9c58b81242440619170ed5960f24/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/shimada.takahito/.gradle/caches/8.13/transforms/4c2a9c58b81242440619170ed5960f24/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.4.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/9be01836e04652a6fcff8bfa93295178/transformed/emoji2-1.4.0/AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.4.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/9be01836e04652a6fcff8bfa93295178/transformed/emoji2-1.4.0/AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.4.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/9be01836e04652a6fcff8bfa93295178/transformed/emoji2-1.4.0/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.4.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/9be01836e04652a6fcff8bfa93295178/transformed/emoji2-1.4.0/AndroidManifest.xml:25:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.4.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/9be01836e04652a6fcff8bfa93295178/transformed/emoji2-1.4.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.4.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/9be01836e04652a6fcff8bfa93295178/transformed/emoji2-1.4.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.4.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/9be01836e04652a6fcff8bfa93295178/transformed/emoji2-1.4.0/AndroidManifest.xml:30:17-75
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.17.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/669e35385d1efee02c093a070f45bd90/transformed/core-1.17.0/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.17.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/669e35385d1efee02c093a070f45bd90/transformed/core-1.17.0/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.17.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/669e35385d1efee02c093a070f45bd90/transformed/core-1.17.0/AndroidManifest.xml:23:9-81
+permission#com.example.kotlinnotetraining.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.17.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/669e35385d1efee02c093a070f45bd90/transformed/core-1.17.0/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.17.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/669e35385d1efee02c093a070f45bd90/transformed/core-1.17.0/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.17.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/669e35385d1efee02c093a070f45bd90/transformed/core-1.17.0/AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.17.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/669e35385d1efee02c093a070f45bd90/transformed/core-1.17.0/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.17.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/669e35385d1efee02c093a070f45bd90/transformed/core-1.17.0/AndroidManifest.xml:26:22-94
+uses-permission#com.example.kotlinnotetraining.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.17.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/669e35385d1efee02c093a070f45bd90/transformed/core-1.17.0/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.17.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/669e35385d1efee02c093a070f45bd90/transformed/core-1.17.0/AndroidManifest.xml:26:22-94
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.10.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/7523d7749007f1f8823fe0f6dd139a43/transformed/lifecycle-process-2.10.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.10.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/7523d7749007f1f8823fe0f6dd139a43/transformed/lifecycle-process-2.10.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.10.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/7523d7749007f1f8823fe0f6dd139a43/transformed/lifecycle-process-2.10.0/AndroidManifest.xml:30:17-78
+service#androidx.room.MultiInstanceInvalidationService
+ADDED from [androidx.room:room-runtime-android:2.8.4] /Users/shimada.takahito/.gradle/caches/8.13/transforms/7b661f70848574544931d0cdcc01cd44/transformed/room-runtime/AndroidManifest.xml:24:9-28:63
+	android:exported
+		ADDED from [androidx.room:room-runtime-android:2.8.4] /Users/shimada.takahito/.gradle/caches/8.13/transforms/7b661f70848574544931d0cdcc01cd44/transformed/room-runtime/AndroidManifest.xml:27:13-37
+	tools:ignore
+		ADDED from [androidx.room:room-runtime-android:2.8.4] /Users/shimada.takahito/.gradle/caches/8.13/transforms/7b661f70848574544931d0cdcc01cd44/transformed/room-runtime/AndroidManifest.xml:28:13-60
+	android:directBootAware
+		ADDED from [androidx.room:room-runtime-android:2.8.4] /Users/shimada.takahito/.gradle/caches/8.13/transforms/7b661f70848574544931d0cdcc01cd44/transformed/room-runtime/AndroidManifest.xml:26:13-43
+	android:name
+		ADDED from [androidx.room:room-runtime-android:2.8.4] /Users/shimada.takahito/.gradle/caches/8.13/transforms/7b661f70848574544931d0cdcc01cd44/transformed/room-runtime/AndroidManifest.xml:25:13-74
+meta-data#androidx.profileinstaller.ProfileInstallerInitializer
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/febbff2901a53937fc578588d38dcb3f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/febbff2901a53937fc578588d38dcb3f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/febbff2901a53937fc578588d38dcb3f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:30:17-85
+receiver#androidx.profileinstaller.ProfileInstallReceiver
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/febbff2901a53937fc578588d38dcb3f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:34:9-52:20
+	android:enabled
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/febbff2901a53937fc578588d38dcb3f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/febbff2901a53937fc578588d38dcb3f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:38:13-36
+	android:permission
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/febbff2901a53937fc578588d38dcb3f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:39:13-57
+	android:directBootAware
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/febbff2901a53937fc578588d38dcb3f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:36:13-44
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/febbff2901a53937fc578588d38dcb3f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:35:13-76
+intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/febbff2901a53937fc578588d38dcb3f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:40:13-42:29
+action#androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/febbff2901a53937fc578588d38dcb3f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:17-91
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/febbff2901a53937fc578588d38dcb3f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:25-88
+intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/febbff2901a53937fc578588d38dcb3f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:43:13-45:29
+action#androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/febbff2901a53937fc578588d38dcb3f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:17-85
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/febbff2901a53937fc578588d38dcb3f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:25-82
+intent-filter#action:name:androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/febbff2901a53937fc578588d38dcb3f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:46:13-48:29
+action#androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/febbff2901a53937fc578588d38dcb3f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:17-88
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/febbff2901a53937fc578588d38dcb3f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:25-85
+intent-filter#action:name:androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/febbff2901a53937fc578588d38dcb3f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:49:13-51:29
+action#androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/febbff2901a53937fc578588d38dcb3f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:17-95
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/shimada.takahito/.gradle/caches/8.13/transforms/febbff2901a53937fc578588d38dcb3f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:25-92

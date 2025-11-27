@@ -6,7 +6,9 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.grid.GridCells
@@ -22,6 +24,7 @@ import androidx.compose.material3.FloatingActionButton
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextField
@@ -36,6 +39,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.Outline
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -44,6 +48,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
+import androidx.room.util.TableInfo
 import androidx.room.util.copy
 import com.example.kotlinnotetraining.ui.theme.KotlinNoteTrainingTheme
 
@@ -185,6 +190,9 @@ fun MemoListScreen(
     onClick: (Int) -> Unit,
     onDeleteClick: (Int) -> Unit
 ) {
+    var query by remember { mutableStateOf("") }
+    val filteredMemoList = memoList.filter { it.contains(query) }
+
     Scaffold(
         topBar = {
             TopAppBar(title = {
@@ -203,12 +211,21 @@ fun MemoListScreen(
             }
         }
     ) { innerPadding ->
-        MemoList(
-            modifier = Modifier.padding(innerPadding),
-            memoList = memoList,
-            onClick = onClick,
-            onDeleteClick = onDeleteClick
-        )
+        Column(modifier = Modifier.padding(innerPadding).fillMaxSize()) {
+            OutlinedTextField(
+                value = query,
+                onValueChange = {value -> query = value },
+                label = {Text("検索")},
+                modifier = Modifier.fillMaxWidth().padding( 16.dp)
+            )
+
+            MemoList(
+                memoList = filteredMemoList,
+                onClick = onClick,
+                onDeleteClick = onDeleteClick
+            )
+        }
+
     }
 }
 
